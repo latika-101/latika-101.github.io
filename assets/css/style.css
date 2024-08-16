@@ -408,6 +408,7 @@ section {
 
 .about .profile-image {
   border-radius: 60%;
+  margin-top: 130px;
 }
 
 .about .content ul li {
@@ -427,9 +428,31 @@ section {
   line-height: 0;
 }
 
+
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
+
+.glow {
+  font-weight: bold;
+  color: #007acc;
+  text-shadow: 0 0 10px #007acc, 0 0 20px #007acc, 0 0 30px #007acc;
+  animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+  from {
+      text-shadow: 0 0 10px #007acc, 0 0 20px #007acc, 0 0 30px #007acc;
+  }
+  to {
+      text-shadow: 0 0 20px #00d1b2, 0 0 30px #00d1b2, 0 0 40px #00d1b2;
+      color: #00d1b2;
+  }
+}
+
+
+
 
 .hover {
   color: black;
